@@ -116,13 +116,64 @@ dbclick | keydown | change | resize
 mouseenter | keyup | focus | scroll
 mouseleave |  | blur | unload
 
-e.g.
+그 외의 이벤트 [link](https://www.w3schools.com/jquery/jquery_ref_events.asp "link")
+mousedown(), mouseup(), hover(), focus(), blur(), on() ...
+
+e.g. p1 id를 가진 태그 위로 마우스가 올라가면 hover 이벤트 발생, 마우스가 떠나면 나머지 이벤트 발생
 ```html
 <script>
 $(document).ready(function(){
-  $("#p1").mouseenter(function(){
+  $("#p1").hover(function(){
     alert("You entered p1!");
-  });
+  }, function(){
+    alert("Bye! You now leave p1!");
+  }); 
 });
 </script>
+```
+
+jQuery 효과(Effects) - 숨기기 그리고 보이기(Hide and Show)
+---
+source
+```html
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script>
+			$(document).ready(function(){
+				$(".flip").click(function(){
+					$(".panel").toggle();
+				});
+			});
+		</script>
+		<style type="text/css"> 
+			div.panel,p.flip {
+				line-height: 30px;
+				margin:auto;
+				font-size:16px;
+				padding:5px;
+				text-align:center;
+				background:#555;
+				border:solid 1px #666;
+				color:#ffffff;
+				border-radius:3px;
+				user-select:none;
+			}
+			div.panel {
+				display:none;
+			}
+			p.flip {
+				cursor:pointer;
+			}
+		</style>
+	</head>
+	<body>
+		<p class="flip">Click to show/hide panel</p>
+		<div class="panel">
+			<p>Because time is valuable, we deliver quick and easy learning.</p>
+			<p>At W3Schools, you can study everything you need to learn, in an accessible and handy format.</p>
+		</div>
+	</body>
+</html>
 ```
