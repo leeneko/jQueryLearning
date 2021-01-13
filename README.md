@@ -86,3 +86,14 @@ jQuery Selectors(선택자)
 문법 | 설명
 -----|-----
 `$("*")` | 모든 요소 선택
+`$(this)` | 현재 HTML 요소 선택
+`$("p.intro")` | p 태그의 class가 intro 인 요소 선택
+`$("p:first")` | 첫번째 p 태그 선택
+`$("ul li:first")` | 첫번째 ul 태그의 첫번째 li 태그 선택
+`$("ul li:first-child")` | 모든 ul 태그의 첫번째 li 태그 선택
+`$("[href]")` | href 속성이 있는 모든 요소 선택
+`$("a[target='_blank']")` | a 태그 중 target 값이 "_blank"인 요소 선택
+`$("a[target!='_blank']")` | 
+`$(":button")` | 
+`$("tr:even")` | 
+`$("tr:odd")` | 
