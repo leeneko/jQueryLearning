@@ -1,7 +1,7 @@
 # jQueryLearning
-[![jQuery](https://jquery.com/jquery-wp-content/themes/jquery/images/logo-jquery.png "jQuery")](https://jquery.com/ "jQuery")
+[![jQuery](https://jquery.com/jquery-wp-content/themes/jquery/images/logo-jquery.png "jQuery")](https://jquery.com/ "jQuery"){target="_blank"}
 
-Learning : [w3schools jQuery Tutorial](https://www.w3schools.com/jquery/jquery_intro.asp "w3schools jQuery Tutorial")
+Learning : [w3schools jQuery Tutorial](https://www.w3schools.com/jquery/jquery_intro.asp "w3schools jQuery Tutorial"){target="_blank"}
 
 jQuery 소개
 ---
@@ -54,4 +54,3 @@ $(function(){
 });
 ```
 
-https://www.w3schools.com/jquery/jquery_selectors.asp
