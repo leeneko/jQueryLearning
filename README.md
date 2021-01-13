@@ -56,11 +56,32 @@ $(function(){
 
 jQuery Selectors(선택자)
 ---
-버튼 클릭하여 p 태그 전부 hide 처리
+- 버튼 클릭하여 p 태그 전부 hide 처리
 ```html
   $(document).ready(function() {
     $("button").click(function() {
       $("p").hide();
-    }
-  }
+    });
+  });
 ```
+
+- &#35;id 선택자
+```html
+  $(document).ready(function(){
+    $("button").click(function(){
+      $("#test").hide();
+    });
+  });
+```
+
+- .class 선택자
+```html
+  $(document).ready(function(){
+    $("button").click(function(){
+      $(".test").hide();
+    });
+  });
+```
+
+---|:---:
+`$("*")` | 모든 요소 선택
