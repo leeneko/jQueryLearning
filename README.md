@@ -34,22 +34,3 @@ Production(압축된 라이브용), Development(코드 확인 가능) 중 용도
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 ```
-
-jQuery Syntax(구문)
----
-$('selector').action() 입니다.
-
-예
-$(this).hide() - 현재 요소를 숨깁니다.
-$("p").hide() -모든 요소를 숨깁니다.
-$(".test").hide() - test class인 모든 요소를 숨깁니다.
-$("#test").hide() - id가 test인 요소를 숨깁니다.
-
-문서 준비 이벤트
----
-아래와 같이 사용하여 HTML 문서 로드가 완료되기 전에 jQuery 코드 실행을 방지합니다.
-```html
-$(function(){
-  // jQuery methods go here...
-});
-```
