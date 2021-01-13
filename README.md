@@ -56,7 +56,7 @@ $(function(){
 
 jQuery Selectors(선택자)
 ---
-버튼 클릭하여 <p> 태그 전부 hide 처리
+버튼 클릭하여 '<p>' 태그 전부 hide 처리
 ```html
   $(document).ready(function() {
     $("button").click(function() {
