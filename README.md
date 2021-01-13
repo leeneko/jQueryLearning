@@ -134,7 +134,8 @@ $(document).ready(function(){
 
 jQuery 효과(Effects) - 숨기기 그리고 보이기(Hide and Show)
 ---
-source
+[jQuery Effect Methods](https://www.w3schools.com/jquery/jquery_ref_effects.asp)
+.toggle() 을 사용해서 선택된 tag의 inline style에 display: none; 속성을 추가, 제거한다
 ```html
 <!DOCTYPE html>
 <html>
@@ -177,3 +178,9 @@ source
 	</body>
 </html>
 ```
+
+또한 아래와 같이 사용할 수도 있다
+
+- speed : `$(selector).hide(speed);`
+- speed, callback : `$(selector).hide(speed, callback);`
+
