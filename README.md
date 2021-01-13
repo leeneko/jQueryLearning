@@ -115,3 +115,14 @@ click | keypress | submit | load
 dbclick | keydown | change | resize
 mouseenter | keyup | focus | scroll
 mouseleave |  | blur | unload
+
+e.g.
+```html
+<script>
+$(document).ready(function(){
+  $("#p1").mouseenter(function(){
+    alert("You entered p1!");
+  });
+});
+</script>
+```
