@@ -70,3 +70,40 @@ $(document).ready(function(){
 	});
 });
 ```
+
+jQuery Animations - The animate() Metod
+---
+```html
+$(document).ready(function(){
+	$("button").click(function(){
+		$(".panel").animate({
+			left: '250px'
+			opacity: '0.5', /* 불투명도 */
+			height: 'toggle',
+			width: '+=150px'
+		});
+	});
+});
+
+-----
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+	$("button").click(function(){
+		var div = $("div");
+		div.animate({height: '300px', opacity: '0.4'}, "slow");
+		div.animate({width: '300px', opacity: '0.8'}, "slow");
+		div.animate({height: '100px', opacity: '0.4'}, "slow");
+		div.animate({width: '100px', opacity: '0.8'}, "slow");
+	};
+}
+</script>
+</head>
+<body>
+<button>Start Animation</button>
+<div style="background:#98bf21;height:100px;width:100px;position:absolute;"></div>
+</body>
+</html>
+```
